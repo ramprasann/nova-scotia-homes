@@ -1,0 +1,21 @@
+{
+  "name": "nova-scotia-homes-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready monorepo for Nova Scotia Homes redesign (Thomas Majcan Real Estate)",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:web": "pnpm --filter @nova/web dev",
+    "dev:mobile": "pnpm --filter @nova/mobile dev",
+    "build:web": "pnpm --filter @nova/web build",
+    "build:mobile": "pnpm --filter @nova/mobile build",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  }
+}
